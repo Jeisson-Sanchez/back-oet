@@ -20,7 +20,7 @@ class CreatePersonasTable extends Migration
             $table->string('segundo_nombre')->nullable();
             $table->string('apellidos');
             $table->string('direccion');
-            $table->integer('telefono');
+            $table->string('telefono');
             $table->string('ciudad');
             $table->unsignedBigInteger('id_clasificacion');
             $table->integer('estado')->default(1);

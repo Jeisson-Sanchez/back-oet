@@ -18,6 +18,7 @@ class CreateVehiculosTable extends Migration
             $table->string('placa')->unique();
             $table->string('color');
             $table->string('marca');
+            $table->unsignedBigInteger('id_tipo_vehiculo');
             $table->unsignedBigInteger('id_conductor');
             $table->unsignedBigInteger('id_propietario');
             $table->integer('estado')->default(1);

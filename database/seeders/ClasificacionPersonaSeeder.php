@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use App\Models\ClasificacionPersona;
 
 class ClasificacionPersonaSeeder extends Seeder
 {
@@ -15,5 +16,6 @@ class ClasificacionPersonaSeeder extends Seeder
     {
         ClasificacionPersona::create(['clasificacion' => 'Propietario']);        
         ClasificacionPersona::create(['clasificacion' => 'Conductor']);
+        ClasificacionPersona::create(['clasificacion' => 'Propietario y Conductor']);
     }
 }
